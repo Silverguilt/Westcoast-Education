@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Login - Westcoast Education</title>
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
+    <script
+      type="module"
+      src="./dist/auth.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./dist/app.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./images/logo.png"
+        alt="Logotyp"
+      />
+      <nav>
+        <a href="courses.html">Kurser</a>
+        <a href="login.html">Logga in</a>
+      </nav>
+    </header>
+
+    <section id="loginSection">
+      <h2>Logga in</h2>
+      <div id="app"></div>
+      <form id="loginForm">
+        <label for="loginUsername">Användarnamn:</label>
+        <input
+          type="text"
+          id="loginUsername"
+          name="loginUsername"
+          required
+        />
+
+        <label for="loginPassword">Lösenord:</label>
+        <input
+          type="password"
+          id="loginPassword"
+          name="loginPassword"
+          required
+        />
+
+        <button
+          type="button"
+          id="loginButton"
+        >
+          Logga in
+        </button>
+        <br />
+        <button
+          type="button"
+          id="registerButton"
+          onclick="window.location.href='register.html'"
+        >
+          Registrera
+        </button>
+      </form>
+    </section>
+
+    <footer>&copy; 2024 Westcoast Education</footer>
+  </body>
+</html>

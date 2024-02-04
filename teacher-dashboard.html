@@ -1,0 +1,145 @@
+<!-- teacher-dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Teacher Dashboard - Westcoast Education</title>
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
+    <script
+      type="module"
+      src="./dist/teacher.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./dist/app.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./dist/auth.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./images/logo.png"
+        alt="Logotyp"
+      />
+      <nav>
+        <a href="courses.html">Kurser</a>
+      </nav>
+    </header>
+
+    <section id="teacherDashboardSection">
+      <h2>Lägg till kurs</h2>
+
+      <!-- Form for adding new courses -->
+      <form id="addCourseForm">
+        <label for="courseName">Kursnamn:</label>
+        <input
+          type="text"
+          id="courseName"
+          name="courseName"
+          required
+        />
+
+        <label for="courseNumber">Kursnummer:</label>
+        <input
+          type="number"
+          id="courseNumber"
+          name="courseNumber"
+          required
+        />
+
+        <label for="description">Beskrivning:</label>
+        <input
+          type="text"
+          id="description"
+        />
+
+        <label for="startDate">Startdatum (yyyy-mm-dd):</label>
+        <input
+          type="string"
+          id="startDate"
+          name="startDate"
+          required
+        />
+
+        <label for="courseLength">Kurslängd ("x veckor"):</label>
+        <input
+          type="string"
+          id="courseLength"
+          name="courseLength"
+          required
+        />
+
+        <label for="classroom">På plats:</label>
+        <input
+          type="checkbox"
+          id="classroom"
+          name="classroom"
+        />
+
+        <label for="distance">På distans:</label>
+        <input
+          type="checkbox"
+          id="distance"
+          name="distance"
+        />
+
+        <label for="teacher">Lärare:</label>
+        <input
+          type="text"
+          id="teacher"
+          name="teacher"
+          required
+        />
+
+        <label for="price">Pris:</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          required
+        />
+
+        <!-- Sektion för att push kurser till db.json -->
+        <div id="addCourseSection">
+          <!-- Visa kurserna här -->
+        </div>
+
+        <button
+          type="button"
+          id="addCourseButton"
+        >
+          Lägg till kurs
+        </button>
+      </form>
+
+      <!-- Sektion för att visa anmälda studenter -->
+      <div id="enrolledStudentsSection">
+        <h2>Kurser och anmälda</h2>
+      </div>
+    </section>
+    <section>
+      <button
+        type="button"
+        id="logoutButton"
+      >
+        Logga ut
+      </button>
+    </section>
+
+    <footer>&copy; 2024 Westcoast Education</footer>
+  </body>
+</html>

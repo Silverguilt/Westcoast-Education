@@ -1,0 +1,203 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "courseName": "Dreja dig dräglig",
+      "courseNumber": 1001,
+      "image": "./images/course1.jpg",
+      "startDate": "2024-02-01",
+      "courseLength": "5 veckor",
+      "classroom": true,
+      "distance": false,
+      "description": "Den perfekta kursen för dig som aldrig drejat tidigare, och som troligtvis inte kommer dreja igen efter kursen heller. Vi går igenom grunderna i drejning, och du får dreja en hund, en pelare och ett gem. Kursen är på 5 veckor, och vi träffas en gång under den perioden. Du får låna verktyg och drejskiva under kursen.",
+      "teacher": "Doris Dray",
+      "coursePrice": 5000
+    },
+    {
+      "id": "2",
+      "courseName": "Bågskytte. Fortsättningskurs",
+      "courseNumber": 1002,
+      "image": "./images/course2.jpg",
+      "startDate": "2024-03-15",
+      "courseLength": "4 veckor",
+      "classroom": false,
+      "distance": true,
+      "description": "Fortsättningskursen för dig som gått nybörjarkursen i bågskytte (alternativt avlossat en pil i strid). Vi går igenom hur du träffar, några etiska frågor och sedan är det bara att köra.",
+      "teacher": "Mia Arrow",
+      "coursePrice": 4000
+    },
+    {
+      "id": "3",
+      "courseName": "Rodeo (inriktning hav)",
+      "courseNumber": 1003,
+      "image": "./images/course3.jpg",
+      "startDate": "2024-04-01",
+      "courseLength": "6 veckor",
+      "classroom": true,
+      "distance": false,
+      "description": "Valar, sjöborrar, uttrar, sälar och sjölejon är några av de arter vi kommer att rida under kursen. Vi går igenom grunderna och du får låna en vågsimulator under kursen.",
+      "teacher": "Lotten Kaske",
+      "coursePrice": 6000
+    },
+    {
+      "id": "4",
+      "courseName": "Lär dig räkna. Grundkurs",
+      "courseNumber": 1004,
+      "image": "./images/course4.jpg",
+      "startDate": "2024-05-10",
+      "courseLength": "3 veckor",
+      "classroom": true,
+      "distance": true,
+      "description": "Vi går igenom grunderna i matematik. Du får lära dig att räkna till 10, och vi går igenom de fyra räknesätten. Kursen är på 3 veckor, och vi träffas dagligen. Egen miniräknare är ett krav.",
+      "teacher": "Ek & Noomi",
+      "coursePrice": 3000
+    },
+    {
+      "id": "5",
+      "courseName": "Levitation och fika",
+      "courseNumber": 1005,
+      "image": "./images/course5.jpg",
+      "startDate": "2024-06-05",
+      "courseLength": "8 veckor",
+      "classroom": true,
+      "distance": true,
+      "description": "För dig som tycker det är trist med bubbel och konst. Kort genomgång av levitationens historia, och sedan blir det fika resten av tiden. Kursen är specialanpassad för nötallergiker och personer med mild till grav höjdskräck.",
+      "teacher": "Calle Flygare",
+      "coursePrice": 8000
+    },
+    {
+      "id": "6",
+      "courseName": "Tidsresor för nybörjare",
+      "courseNumber": 1006,
+      "image": "./images/course6.jpg",
+      "startDate": "2024-07-20",
+      "courseLength": "5 veckor",
+      "classroom": true,
+      "distance": false,
+      "description": "Lär dig att resa tillbaka i tiden. Vi går igenom de fyra tidsresesätten. Kursen är på 5 veckor, och vi träffas en gång under den perioden. Egen tidsmaskin är ett krav.",
+      "teacher": "M:et Brun",
+      "coursePrice": 5000
+    },
+    {
+      "id": "7",
+      "courseName": "Portabelt kärnkraftverk",
+      "courseNumber": 1007,
+      "image": "./images/course7.jpg",
+      "startDate": "2024-08-12",
+      "courseLength": "7 veckor",
+      "classroom": true,
+      "distance": true,
+      "description": "Officiellt är detta en kurs om energi, men oroa dig inte, vi kommer att bygga ett portabelt kärnkraftverk. Egen blykappa är inget krav, men en bra idé.",
+      "teacher": "M:et Brun",
+      "coursePrice": 7000
+    },
+    {
+      "id": "8",
+      "courseName": "Pandaputtning",
+      "courseNumber": 1008,
+      "image": "./images/course8.jpg",
+      "startDate": "2024-09-01",
+      "courseLength": "6 veckor",
+      "classroom": false,
+      "distance": true,
+      "description": "För dig som vill lära dig att putta pandor. Vi går igenom grunderna i pandaputtning, och du får låna en panda under kursen.",
+      "teacher": "Lotten Kaske",
+      "coursePrice": 6000
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Kalle",
+      "lastName": "Anka",
+      "address": "Ankeborg 1",
+      "postalCode": "123 45",
+      "city": "Ankeborg",
+      "phone": "070-123 45 67",
+      "email": "kalle.anka@hotmail.com",
+      "username": "kalle_anka",
+      "password": "1234",
+      "role": "student"
+    },
+    {
+      "id": 2,
+      "firstName": "Musse",
+      "lastName": "Pigg",
+      "address": "Ankeborg 2",
+      "postalCode": "123 45",
+      "city": "Ankeborg",
+      "phone": "070-123 45 67",
+      "email": "musse.pigg@hotmail.com",
+      "username": "musse_pigg",
+      "password": "1234",
+      "role": "teacher"
+    },
+    {
+      "id": 883,
+      "firstName": "Sebastian",
+      "lastName": "Flavet",
+      "address": "Styrmansgatan 25",
+      "postalCode": "114 54",
+      "city": "Stockholm",
+      "phone": "0701985193",
+      "email": "sebastian@flavet.se",
+      "username": "silverguilt",
+      "password": "123",
+      "role": "student",
+      "enrolledCourses": [
+        "Dreja dig dräglig",
+        "Bågskytte. Fortsättningskurs",
+        "Rodeo (inriktning hav)",
+        "Lär dig räkna. Grundkurs",
+        "Levitation och fika",
+        "Tidsresor för nybörjare",
+        "Portabelt kärnkraftverk",
+        "Pandaputtning"
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "Runar",
+      "lastName": "Söderlund",
+      "address": "Hejargatan 1",
+      "postalCode": "123 45",
+      "city": "Södertälje",
+      "phone": "0701234567",
+      "email": "runar@hotmail.com",
+      "username": "runar",
+      "password": "123",
+      "role": "student",
+      "enrolledCourses": [
+        "Rodeo (inriktning hav), Levitation och fika, Pandaputtning"
+      ]
+    },
+    {
+      "id": 594,
+      "firstName": "Henrik",
+      "lastName": "Bratt",
+      "address": "Slumpgatan 12",
+      "postalCode": "111 11",
+      "city": "Väsksjö",
+      "phone": "059372234",
+      "email": "hb@gmail.com",
+      "username": "henke",
+      "password": "brattis",
+      "role": "student",
+      "enrolledCourses": ["Lär dig räkna. Grundkurs", "Rodeo (inriktning hav)"]
+    },
+    {
+      "id": 84,
+      "firstName": "Sebastian",
+      "lastName": "Orest Flavet",
+      "address": "Endre Lilla Fjälls 157",
+      "postalCode": "621 77",
+      "city": "Visby",
+      "phone": "+46701985193",
+      "email": "sebastian.flavet@tekniskamuseet.se",
+      "username": "hejhej",
+      "password": "hej",
+      "role": "student",
+      "enrolledCourses": []
+    }
+  ]
+}

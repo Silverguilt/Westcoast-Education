@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Dashboard - Westcoast Education</title>
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
+    <script
+      type="module"
+      src="./dist/auth.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./dist/app.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./dist/dashboard.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./images/logo.png"
+        alt="Logotyp"
+      />
+      <nav>
+        <a href="courses.html">Kurser</a>
+      </nav>
+    </header>
+
+    <section id="dashboardSection">
+      <h2>Mina sidor</h2>
+      <div id="userInfo">
+        <h3>Användarinformation</h3>
+        <p><strong>Name:</strong> <span id="userName"></span></p>
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+        <p><strong>Address:</strong> <span id="userAddress"></span></p>
+        <p><strong>City:</strong> <span id="userCity"></span></p>
+        <p><strong>Zip:</strong> <span id="userZip"></span></p>
+        <p><strong>Anmälda kurser:</strong> <span id="userCourses"></span></p>
+      </div>
+      <div id="app"></div>
+      <button
+        type="button"
+        id="logoutButton"
+      >
+        Logga ut
+      </button>
+    </section>
+
+    <footer>&copy; 2024 Westcoast Education</footer>
+  </body>
+</html>
